@@ -13,7 +13,7 @@ public class WelcomeController {
 
     private final Logger logger = LoggerFactory.getLogger(WelcomeController.class);
 
-    @etMapping("/")
+    @GetMapping("/")
     public String index(Model model) {
         logger.debug("Welcome to example.com...");
         model.addAttribute("msg", getMessage());
