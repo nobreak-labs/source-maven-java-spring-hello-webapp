@@ -21,6 +21,7 @@ pipeline {
       steps {
         sh 'ls -alh'
         sh 'date'
+        sh 'mvn test'
       }
     }
     stage('Deploy') {
