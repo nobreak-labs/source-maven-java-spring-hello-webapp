@@ -20,6 +20,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'ls -alh'
+        sh 'date'
       }
     }
     stage('Deploy') {
