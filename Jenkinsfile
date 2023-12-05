@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'la -alh'
+        sh 'ls -alh'
       }
     }
     stage('Deploy') {
